@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NexaDesk AI (mockup)</title><link rel="stylesheet" href="styles.css"></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<section id="login" class="login"><form id="lf" class="card" novalidate>
+<h1>NexaDesk <span>AI</span></h1><p class="mut">Sign in to your account</p>
+<div class="role-tabs" style="display:flex;gap:6px;margin:12px 0 16px;"><button type="button" class="btn ghost sm on" data-act="lrole" data-r="admin">👑 Admin</button><button type="button" class="btn ghost sm" data-act="lrole" data-r="staff">🎧 Staff</button><button type="button" class="btn ghost sm" data-act="lrole" data-r="customer">👤 Customer</button></div>
+<label for="em">Email</label><input id="em" type="email" autocomplete="email" value="admin@nexadesk.internal" placeholder="you@company.com"><small class="err" id="e-em"></small>
+<label for="pw">Password</label><input id="pw" type="password" value="password123" autocomplete="current-password"><small class="err" id="e-pw"></small>
+<div class="row"><label class="chk"><input type="checkbox" id="rm" checked> Remember me</label><a href="#" data-act="forgot">Forgot password?</a></div>
+<button class="btn wide">Sign in</button>
+<p class="mut sm">Prototype: Choose role above or in navbar, or enter any valid email.</p></form></section>
+<div id="app" hidden>
+<aside id="side"><div class="brand">NexaDesk <span>AI</span></div><nav id="nav" aria-label="Main"></nav></aside>
+<div class="body"><header>
+<button class="btn ghost menu" data-act="menu" aria-label="Toggle menu">&#9776;</button>
+<input id="gs" type="search" placeholder="Search tickets, press Enter" aria-label="Search tickets">
+<div class="role-sel" id="role-sel" role="radiogroup" aria-label="Choose role"><span class="role-lbl">Role:</span><button type="button" class="btn ghost sm on" data-act="role" data-r="admin">👑 Admin</button><button type="button" class="btn ghost sm" data-act="role" data-r="staff">🎧 Staff</button><button type="button" class="btn ghost sm" data-act="role" data-r="customer">👤 Customer</button></div>
+<div class="um"><button class="btn ghost" id="um-btn" data-act="um" aria-haspopup="true" aria-expanded="false">Priya Nair &#9662;</button>
+<div id="umm" class="menu-pop" hidden><button data-act="prof">Profile settings</button><button data-act="out">Sign out</button></div></div></header>
+<div class="banner">Mockup only: sample data in your browser, no backend.</div>
+<main id="main" tabindex="-1"></main></div></div>
+<dialog id="dlg" aria-labelledby="dt"></dialog><div id="toasts" role="status" aria-live="polite"></div>
+<script src="app.js"></script></body></html>
